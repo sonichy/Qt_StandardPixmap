@@ -5,8 +5,8 @@
 ### 知识要点：
 Qt内置枚举型遍历。  
 
-* Deepin Linux
+### Deepin Linux
 ![alt](preview.png)  
 
-* Windows 7
+### Windows 7
 ![alt](preview_win7.jpg)  
