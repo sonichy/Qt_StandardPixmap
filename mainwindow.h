@@ -17,6 +17,9 @@ public:
 
 private:
     Ui::MainWindow *ui;
+
+private slots:
+    void addItem(QString s);
 };
 
 #endif // MAINWINDOW_H

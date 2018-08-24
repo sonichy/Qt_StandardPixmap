@@ -3,7 +3,7 @@
 已编译好的 StandardPixmap 程序适用 64 位 Linux 系统 Qt5 环境，双击运行，其他版本请自行编译。  
 
 * Deepin Linux
-![alt](preview.jpg)  
+![alt](preview.png)  
 
 * Windows 7
 ![alt](preview_win7.jpg)  
