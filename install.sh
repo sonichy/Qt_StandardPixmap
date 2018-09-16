@@ -1,0 +1,2 @@
+s="[Desktop Entry]\nName=StandardPixmap\nComment=StandardPixmap\nExec=`pwd`/StandardPixmap\nIcon=`pwd`/icon.jpg\nPath=`pwd`\nTerminal=false\nType=Application\nCategories=System;"
+echo -e $s > StandardPixmap.desktop
