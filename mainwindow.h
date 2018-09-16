@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QListWidgetItem>
 
 namespace Ui {
 class MainWindow;
@@ -20,6 +21,7 @@ private:
 
 private slots:
     void addItem(QString s);
+    void itemClick(QListWidgetItem *item);
 };
 
 #endif // MAINWINDOW_H

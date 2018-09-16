@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QMetaEnum>
+#include <QClipboard>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -11,6 +12,7 @@ MainWindow::MainWindow(QWidget *parent) :
     //showMaximized();
     addItem("");
     connect(ui->lineEdit, SIGNAL(textChanged(QString)), this, SLOT(addItem(QString)));
+    connect(ui->listWidget, SIGNAL(itemClicked(QListWidgetItem*)), this, SLOT(itemClick(QListWidgetItem*)));
 }
 
 MainWindow::~MainWindow()
@@ -30,4 +32,10 @@ void MainWindow::addItem(QString s)
             ui->listWidget->addItem(LWI);
         }
     }
+}
+
+void MainWindow::itemClick(QListWidgetItem *item)
+{
+    QClipboard *clipboard = QApplication::clipboard();
+    clipboard->setText(item->text());
 }
